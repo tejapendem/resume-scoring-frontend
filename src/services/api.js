@@ -1,28 +1,5 @@
-// const API_BASE = "http://127.0.0.1:8000";
 
-// export const sendJobDescription = async (description) => {
-//   const form = new FormData();
-//   form.append("description", description);
-//   const res = await fetch(`${API_BASE}/job-description`, {
-//     method: "POST",
-//     body: form,
-//   });
-//   return res.json();
-// };
-
-// export const uploadResume = async (file) => {
-//   const form = new FormData();
-//   form.append("file", file);
-//   const res = await fetch(`${API_BASE}/upload-resume`, {
-//     method: "POST",
-//     body: form,
-//   });
-//   return res.json();
-// };
-
-
-
-// const API_BASE = "http://127.0.0.1:8000";
+/* const API_BASE = "http://127.0.0.1:8000"; */
 const API_BASE_URL = "https://your-fastapi-backend.onrender.com";
 
 export const sendJobDescription = async (description) => {
