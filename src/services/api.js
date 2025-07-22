@@ -1,6 +1,7 @@
 
 /* const API_BASE = "http://127.0.0.1:8000"; */
-const API_BASE_URL = "https://your-fastapi-backend.onrender.com";
+const API_BASE_URL = "https://resume-scoring-backend.onrender.com";
+
 
 export const sendJobDescription = async (description) => {
   const form = new FormData();

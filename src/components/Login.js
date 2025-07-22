@@ -19,7 +19,7 @@ function Login({ onLogin }) {
       params.append("username", username);
       params.append("password", password);
 
-      const response = await axios.post('http://localhost:8000/token', params, {
+      const response = await axios.post('https://resume-scoring-backend.onrender.com/token', params, {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },

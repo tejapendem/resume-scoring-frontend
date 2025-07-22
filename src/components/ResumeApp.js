@@ -19,7 +19,7 @@ const ResumeApp = () => {
   };
 
   const downloadFile = (filename) => {
-    window.open(`http://127.0.0.1:8000/download/${filename}`, "_blank");
+    window.open(`https://resume-scoring-backend.onrender.com/download/${filename}`, "_blank");
   };
 
   const filteredResumes = resumes.filter((res) =>

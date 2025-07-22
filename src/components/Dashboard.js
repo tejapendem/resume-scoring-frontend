@@ -17,7 +17,7 @@ function Dashboard({ onLogout }) {
     const formData = new FormData();
     formData.append('file', file);
 
-    const res = await fetch('http://localhost:8000/upload-resume', {
+    const res = await fetch('https://resume-scoring-backend.onrender.com/upload-resume', {
       method: 'POST',
       body: formData
     });
@@ -26,18 +26,18 @@ function Dashboard({ onLogout }) {
   };
 
   useEffect(() => {
-    fetch("http://localhost:8000/resumes")
+    fetch("https://resume-scoring-backend.onrender.com/resumes")
       .then(res => res.json())
       .then(data => setResumes(data));
   }, []);
 
   const submitJobDesc = async () => {
-    await fetch('http://localhost:8000/job-description', {
+    await fetch('https://resume-scoring-backend.onrender.com/job-description', {
       method: 'POST',
       body: new URLSearchParams({ description: jobDesc }),
     });
 
-    const res = await fetch('http://localhost:8000/resumes');
+    const res = await fetch('https://resume-scoring-backend.onrender.com/resumes');
     const updated = await res.json();
     setResumes(updated);
   };
@@ -107,7 +107,7 @@ function Dashboard({ onLogout }) {
                 </span>
               </td>
               <td>
-                <a href={`http://localhost:8000/download/${r.filename}`} download>
+                <a href={`https://resume-scoring-backend.onrender.com/download/${r.filename}`} download>
                   Download
                 </a>
               </td>
