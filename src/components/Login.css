@@ -1,0 +1,98 @@
+/* .login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+.login-box {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  min-width: 300px;
+}
+
+.login-box input {
+  margin-top: 1rem;
+  padding: 0.6rem;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-box button {
+  margin-top: 1.5rem;
+  padding: 0.6rem;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  background: #764ba2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+} */
+
+/* Full-page centered background */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card-style login box */
+.login-box {
+  background: #ffffff;
+  padding: 2.5rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Heading */
+.login-box h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Input fields */
+.login-box input {
+  margin: 0.8rem 0;
+  padding: 0.7rem;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease;
+  font-size: 1rem;
+}
+
+.login-box input:focus {
+  border: 1px solid #764ba2;
+  outline: none;
+}
+
+/* Button */
+.login-box button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background: #764ba2;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-box button:hover {
+  background: #5a3d91;
+}
